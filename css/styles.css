@@ -1,0 +1,825 @@
+/* Navbar background */
+.bg-custom {
+  background-color: #27170c !important;
+}
+
+/* Nav links base */
+.nav-link-custom {
+  color: #e3aa5b !important;
+  transition: color 0.5s ease;
+}
+
+/* Nav links hover */
+.nav-link-custom:hover {
+  color: #ffffff !important;
+}
+
+.login-hover{
+  color: #e3aa5b !important;
+  border-radius: 25px !important;
+}
+
+.login-hover:hover{
+  background-color: #e3aa5b !important;
+  border: none;
+  color: white !important;
+}
+
+/* Toggler icon in white */
+.toggler-white {
+  filter: brightness(0) invert(1);
+}
+
+/* Navbar brand hover effect */
+/* .brand-hover-border {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  color: #e3aa5b;
+}
+
+.brand-hover-border:hover {
+  background-color: #e3aa5b;
+  color: #ffffff;
+} */
+
+/* Base nav link hover style */
+.navlink-hover-style {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 25px;
+  transition: all 0.3s;
+  color: #170d06;
+}
+
+/* Default hover effect */
+.navlink-hover-style:hover {
+  background-color: #e3aa5b;
+}
+
+  @media (max-width: 575.98px) {
+    /* Make navbar nav and items full width */
+    .navbar-collapse {
+      width: 100%;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      align-items: center;
+      /* Center items horizontally */
+    }
+
+    .navbar-nav .nav-item {
+      width: 100%;
+      padding: 6px 0;
+    }
+
+    /* Link style */
+    .navlink-hover-style {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      text-align: center;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      border-radius: 30px;
+    }
+
+    .navlink-hover-style:hover {
+      background-color: #e3aa5b;
+      color: #fff !important;
+      border-radius: 30px;
+    }
+  }
+
+
+/* Navbar collapse base (right aligned by default) */
+.nav-collapse-center {
+  display: flex;
+  justify-content: end;
+}
+
+.navbar-collapse .btn {
+  max-width: 200px;   /* limit max width */
+  width: 100%;        /* fill width up to max-width */
+  margin: 0.5rem auto; /* center horizontally */
+  padding: 0.4rem 1rem; /* reduce padding for smaller height */
+  display: block;
+  text-align: center;
+}
+
+/* Nav item layout: row by default */
+.nav-center-items {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* On screens smaller than the Bootstrap "sm" breakpoint */
+@media (max-width: 575.98px) {
+  .nav-collapse-center {
+    justify-content: center;
+  }
+
+  .nav-center-items {
+    flex-direction: column;
+  }
+
+  .nav-center-items .nav-item {
+    margin: 8px 0;
+  }
+}
+
+/* Hero / Image section */
+.cassroule {
+  height: 500px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-bg{
+  background: url(../img/Login_Bg.png);
+  background-color: #160d06;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;  
+  height: 95vh;
+  /* margin: 0; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay-img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  height: 60%;
+  width: auto;
+  border-radius: 12px;
+}
+
+/* Responsive height for hero section */
+
+@media (max-width: 900px) {
+  .overlay-img {
+    top: 21%;
+    height: 55%;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay-img {
+    top: 24%;
+    height: 50%;
+    width: auto;
+  }
+
+  .cassroule {
+    height: 350px;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay-img {
+    top: 25%;
+    height: 50%;
+    width: auto;
+  }
+
+  .cassroule {
+    height: 250px;
+  }
+}
+
+/* Circle image with custom size and rotation */
+.circle-img {
+  position: absolute;
+  mix-blend-mode: screen;
+  top: -50%;
+  left: 50.5%;
+  transform: translateX(-50%);
+  z-index: 1;
+  /* below .overlay-img */
+  height: 200%;
+  width: auto;
+  animation: rotateCircle 180s linear infinite;
+}
+
+/* Responsive styles for .circle-img */
+@media (max-width: 900px) {
+  .circle-img {
+    top: -39%;
+    height: 175%;
+    left: 51% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .circle-img {
+    top: -41%;
+    height: 180%;
+  }
+}
+
+@media (max-width: 576px) {
+  .circle-img {
+    top: -30%;
+    height: 160%;
+  }
+}
+
+/* Rotation keyframes */
+@keyframes rotateCircle {
+  from {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+/* Chat Now Section */
+.chat-now-section {
+  background-image: url("../img/ChatNow BG.png");
+  background-size: cover;
+  background-position: center;
+  height: 295px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  overflow: hidden;
+  /* Prevents overflow */
+}
+
+/* Inner content layout */
+.chat-now-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  /* Ensure content is vertically aligned */
+  position: relative;
+  /* Allow positioning of children */
+}
+
+/* Button Styling */
+.chat-now-button {
+  background-color: #0a9c38;
+  color: white;
+  border: none;
+  padding: 12px 36px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  /* Center the button horizontally */
+  right: -850px;
+}
+
+/* Left Image */
+.chat-now-image-left {
+  height: 550%;
+  /* Control left image height */
+  object-fit: contain;
+  /* Keep image's aspect ratio */
+  /* max-height: 100%; */
+  width: auto;
+  position: absolute;
+  left: 0;
+  top: -145px;
+}
+
+/* Right Image */
+.chat-now-image-right {
+  height: 450%;
+  /* Control right image height */
+  object-fit: contain;
+  /* Keep image's aspect ratio */
+  width: auto;
+  position: absolute;
+  right: -350px;
+  /* Adjusted to move the image more to the right */
+  top: -100px;
+}
+
+/* Responsive Layout for Smaller Screens */
+
+@media (max-width: 1700px) {
+  .chat-now-button {
+    right: -750px !important;
+  }
+
+  .chat-now-image-right {
+    right: -150px !important;
+  }
+}
+
+@media (max-width: 1500px) {
+  .chat-now-button {
+    right: -600px !important;
+  }
+
+  .chat-now-image-right {
+    right: -30px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .chat-now-image-left {
+    left: -110px !important;
+  }
+
+  .chat-now-button {
+    right: -550px !important;
+  }
+
+  .chat-now-image-right {
+    right: 100px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .chat-now-image-left {
+    left: -120px !important;
+  }
+
+  .chat-now-button {
+    right: -400px !important;
+  }
+
+  .chat-now-image-right {
+    right: 100px !important;
+  }
+}
+
+@media (max-width: 820px) {
+
+  .chat-now-image-left {
+    left: -185px !important;
+  }
+
+  .chat-now-button {
+    right: -320px !important;
+  }
+  .chat-now-image-right {
+    right: 20px !important;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .chat-now-section {
+    height: 200px;
+    padding: 2rem 0;
+  }
+
+  .chat-now-content {
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .chat-now-image-left {
+    left: -65px !important;
+    top: -75px !important;
+  }
+
+  .chat-now-button {
+    right: 0px !important;
+    font-size: 1rem;
+    padding: 6px 18px;
+  }
+
+  .chat-now-image-right {
+    right: 150px !important;
+    height: 450% !important;
+    top: -65px !important;
+  }
+}
+
+@media (max-width: 630px) {
+  .chat-now-section {
+    height: 200px;
+    padding: 2rem 0;
+  }
+
+  .chat-now-content {
+    flex-direction: column;
+    justify-content: center !important;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .chat-now-image-left {
+    visibility: hidden;
+    left: -100px !important;
+    top: -120px !important;
+  }
+
+  .chat-now-button {
+    right: 125px !important;
+    font-size: 1rem !important;
+    padding: 6px 18px !important;
+  }
+
+  .chat-now-image-right {
+    right: 85px !important;
+    height: 450% !important;
+    top: -65px !important;
+  }
+}
+
+@media (max-width: 412px) {
+
+  .chat-now-image-left {
+    visibility: visible;
+    left: -100px !important;
+    top: -70px !important;
+  }
+  .chat-now-button {
+    right: -90px !important;
+    font-size: 1rem !important;
+    padding: 6px 18px !important;
+  }
+  .chat-now-image-right {
+    visibility: hidden;
+    /* right: 55px !important;
+    height: 450% !important;
+    top: -65px !important; */
+  }
+}
+
+
+
+/* Main container with background */
+.main-section-with-bg {
+  background-image: url('../img/Services\ BG.jpg'); /* Replace with actual image path */
+  background-color: #feecaa;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #000;
+}
+@media (max-width: 412px) {
+  .main-section-with-bg{
+    background-color: #feecaa !important;
+    background-size: initial !important;
+  }
+  
+}
+
+/* Maroon background badge */
+.bg-maroon {
+  background-color: #500000;
+}
+
+/* Services cards */
+.service-card {
+  width: 140px;
+  height: 180px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 2px solid #27170c;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 989px) {
+  .service-card{
+    width: 110px;
+    height: 110px !important;
+  }
+  
+}
+
+.service-icon {
+  width: 100%;
+  height: 100px;
+  object-fit: cover; /* Fills the space and crops if needed */
+  border-radius: 8px;
+}
+
+.service-label {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #000;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+/* Astrologers */
+.astrologer-img {
+  width: 100px;
+  height: 100px;
+  background-color: #f5a623;
+  border-radius: 50%;
+  border: 2px solid #000;
+}
+.astrologer-name {
+  background-color: #f5a623;
+  color: #000;
+  padding: 6px 10px;
+  margin-top: 5px;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-section-with-bg {
+  background: url('../img/Services\ BG.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay Optional */
+/* .main-section-with-bg::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255,255,255,0.8);
+  z-index: -1;
+} */
+
+.bg-maroon {
+  background-color: #800000;
+}
+
+.service-card {
+  /* background: white; */
+  background: url('../img/ChatNow\ BG.png');
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.service-label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.astrologer-card {
+  /* background: #fff; */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+}
+
+.astrologer-img {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  border-radius: 50%;
+}
+
+.astrologer-name {
+  font-weight: bold;
+}
+
+/* Change the color of the carousel arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(28%) sepia(40%) saturate(5978%) hue-rotate(5deg) brightness(96%) contrast(91%);
+}
+
+/* Custom color for hover effect (optional) */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: invert(28%) sepia(40%) saturate(5978%) hue-rotate(5deg) brightness(96%) contrast(91%);
+}
+
+
+
+
+
+/* Daily Horoscope Section Styles */
+.daily-horoscope-heading {
+  display: inline-block;
+  background-color: #4a2600; /* Dark brown background */
+  color: #fff; /* White text */
+  padding: 0.5rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+.daily-horoscope-section {
+  position: relative;
+  padding: 3rem 0;
+  color: #fff;
+}
+
+/* Background image setup */
+.horoscope-bg {
+  background-image: url('../img/Zodiac\ BG.png'); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Dark overlay to improve contrast */
+.horoscope-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Ensures content appears above overlay */
+.daily-horoscope-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card styling */
+.horoscope-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.horoscope-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Image styling for card */
+.horoscope-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 5 / 6; /* Maintains 1000x1200 ratio */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive spacing */
+@media (max-width: 767.98px) {
+  .daily-horoscope-section {
+    padding: 2rem 0;
+  }
+}
+
+
+
+.puja-bg {
+  background-image: url('../img/Services\ BG.jpg');
+  background-color: #feecaa;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 295px;
+  width: 100%;
+}
+
+.puja-samagri-section {
+  position: relative;
+}
+
+.puja-content {
+  height: 100%;
+}
+
+.puja-samagri-heading {
+  display: inline-block;
+  /* background-color: #4a2600; */
+  color: #4a2600;
+  padding: 0.5rem 2rem;
+  /* border-radius: 50px; */
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.puja-search-form input.form-control {
+  width: 300px;
+  border-radius: 30px;
+}
+
+.puja-search-form button.btn {
+  border-radius: 30px;
+  padding: 0 1.5rem;
+}
+
+
+
+.about-us-wrapper {
+  background: url('../img/BOTTOM\ BG.png');
+  background-size: cover;
+  background-position: center;
+  color: #2c1b10;
+  max-height: 590px;
+  overflow: hidden;
+}
+
+.about-us-upper {
+  padding-bottom: 1rem;
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4a2600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.about-us-lower {
+  padding: 2rem 1rem;
+}
+
+.footer-column {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center */
+  align-items: center;     /* Horizontally center */
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .about-us-lower{
+    visibility: hidden;
+  }
+  
+}

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-link-custom brand-hover-border" href="#">
+          Astro Sarthi
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon toggler-white"></span>
+        </button>
+
+        <div class="collapse navbar-collapse nav-collapse-center" id="navbarNav">
+          <ul class="navbar-nav nav-center-items">
+            <li class="nav-item">
+              <a class="nav-link active nav-link-custom navlink-hover-style" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom navlink-hover-style" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom navlink-hover-style" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="/login.html" class="btn btn-outline-light login-hover">Login / Sign In</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero / Image Section -->
+<div class="cassroule position-relative">
+  <!-- Rotating Circle Image -->
+  <img src="img/Circle.png" alt="Rotating Circle" class="circle-img" />
+
+  <!-- Static Overlay Image -->
+  <img src="img/Icon.png" alt="Overlay Icon" class="overlay-img" />
+
+  <!-- Background image -->
+  <img src="img/Hero Bg@3x.png" alt="Main Visual" class="background-img" />
+</div>
+
+
+<!-- Chat Now Section -->
+<div class="chat-now-section">
+  <div class="container-fluid px-0">
+    <div class="chat-now-content d-flex justify-content-between align-items-center">
+      <!-- Left Image -->
+      <img src="img/ChatNow Baba.png" alt="Astrologer" class="chat-now-image-left" />
+      
+      <!-- Button -->
+      <button class="chat-now-button">Chat Now</button>
+      
+      <!-- Right Image -->
+      <img src="img/ChatNow Phone.png" alt="Chat UI" class="chat-now-image-right" />
+    </div>
+  </div>
+</div>
+
+
+<!-- COMBINED SECTION WITH BACKGROUND -->
+<section class="main-section-with-bg py-5" id="services">
+  <div class="container text-center text-dark">
+
+    <!-- OUR SERVICES -->
+    <h2 class="text-white bg-maroon d-inline-block px-4 py-2 rounded-pill mb-5">Our Services</h2>
+    <div class="row justify-content-center">
+      <!-- Repeatable Service Card -->
+      <div class="col-6 col-md-2 mb-4" style="min-width: 120px;">
+        <div class="service-card">
+          <img src="img/Chat with astro.jpg" alt="Chat" class="service-icon">
+        </div>
+        <p class="service-label">CHAT WITH ASTROLOGERS</p>
+      </div>
+      <!-- Add other 4 cards similarly -->
+      <div class="col-6 col-md-2 mb-4">
+        <div class="service-card">
+          <img src="img/kundali.png" alt="Kundali" class="service-icon">
+        </div>
+        <p class="service-label">KUNDALI</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <div class="service-card">
+          <img src="img/Online Puja.jpg" alt="Online Puja" class="service-icon">
+        </div>
+        <p class="service-label">ONLINE PUJA</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <div class="service-card">
+          <img src="img/Panchang.png" alt="Panchang" class="service-icon">
+        </div>
+        <p class="service-label">PANCHANG</p>
+      </div>
+      <div class="col-6 col-md-2 mb-4">
+        <div class="service-card">
+          <img src="img/Wheel.png" alt="Horoscope" class="service-icon">
+        </div>
+        <p class="service-label">HOROSCOPE</p>
+      </div>
+    </div>
+
+    <!-- OUR ASTROLOGERS -->
+<h2 class="text-white bg-maroon d-inline-block px-4 py-2 rounded-pill mb-5 mt-5">Our Astrologers</h2>
+
+<!-- Desktop Grid -->
+<div class="row justify-content-center d-none d-md-flex">
+  <div class="col-6 col-sm-4 col-md-2 mb-4">
+    <div class="astrologer-card">
+      <div class="astrologer-img mx-auto mb-2"></div>
+      <div class="astrologer-name">Astrologer 1</div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2 mb-4">
+    <div class="astrologer-card">
+      <div class="astrologer-img mx-auto mb-2"></div>
+      <div class="astrologer-name">Astrologer 2</div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2 mb-4">
+    <div class="astrologer-card">
+      <div class="astrologer-img mx-auto mb-2"></div>
+      <div class="astrologer-name">Astrologer 3</div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2 mb-4">
+    <div class="astrologer-card">
+      <div class="astrologer-img mx-auto mb-2"></div>
+      <div class="astrologer-name">Astrologer 4</div>
+    </div>
+  </div>
+  <div class="col-6 col-sm-4 col-md-2 mb-4">
+    <div class="astrologer-card">
+      <div class="astrologer-img mx-auto mb-2"></div>
+      <div class="astrologer-name">Astrologer 5</div>
+    </div>
+  </div>
+  <!-- Add more cards as needed -->
+</div>
+
+<!-- Mobile Carousel -->
+<div id="astroCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="astrologer-card text-center">
+        <div class="astrologer-img mx-auto mb-2"></div>
+        <div class="astrologer-name">Astrologer 1</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="astrologer-card text-center">
+        <div class="astrologer-img mx-auto mb-2"></div>
+        <div class="astrologer-name">Astrologer 2</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="astrologer-card text-center">
+        <div class="astrologer-img mx-auto mb-2"></div>
+        <div class="astrologer-name">Astrologer 3</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="astrologer-card text-center">
+        <div class="astrologer-img mx-auto mb-2"></div>
+        <div class="astrologer-name">Astrologer 4</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="astrologer-card text-center">
+        <div class="astrologer-img mx-auto mb-2"></div>
+        <div class="astrologer-name">Astrologer 5</div>
+      </div>
+    </div>
+    <!-- Add more carousel items as needed -->
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#astroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#astroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+  </div>
+</section>
+
+
+
+
+<!-- Daily Horoscope Section -->
+<section class="daily-horoscope-section horoscope-bg py-5">
+  <div class="container text-center mb-4">
+    <h2 class="daily-horoscope-heading">Daily Horoscope</h2>
+    <div class="row g-3">
+      <!-- Row 1 -->
+      <div class="col-6 col-sm-4 col-md-2" >
+        <div class="horoscope-card">
+          <img src="/img/SIGN  NEW/AQUARIUS.png" alt="Horoscope 1" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/ARIES.png" alt="Horoscope 2" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/CANCER.png" alt="Horoscope 3" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/CAPRICON.png" alt="Horoscope 4" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/GEMINI.png" alt="Horoscope 5" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/LEO.png" alt="Horoscope 6" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/LIBRA.png" alt="Horoscope 7" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/PISCES.png" alt="Horoscope 8" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/SAGITTARIUS.png" alt="Horoscope 9" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/SCORPIO.png" alt="Horoscope 10" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/TAURUS.png" alt="Horoscope 11" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <div class="horoscope-card">
+          <img src="img/SIGN  NEW/VIRGO.png" alt="Horoscope 12" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="puja-samagri-section puja-bg text-center">
+  <div class="puja-content container h-100 d-flex flex-column justify-content-center align-items-center">
+    <h2 class="puja-samagri-heading">Download Puja Samagri PDF</h2>
+    <form class="puja-search-form mt-3 d-flex">
+      <input type="text" class="form-control" placeholder="Search for Puja Samagri...">
+      <button type="submit" class="btn btn-dark ms-2">Search</button>
+    </form>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="about-us-wrapper" id="about">
+  <div class="about-us-upper text-center py-4">
+    <div class="container">
+      <h2 class="about-heading mb-4">About Us</h2>
+      <p class="about-text">
+        <strong>At Astro Sarthi</strong> astrology isn’t just about predicting events—it's about understanding the cosmic blueprint of your life. We are devoted to unraveling the mysteries of the stars, guiding you through the ebbs and flows of your celestial journey.
+      </p>
+      <p class="about-text">
+        Our platform is designed to be your personal gateway to the cosmos. Discover the meaning behind planetary alignments, explore your unique birth chart, and receive insights that empower you to navigate life’s twists and turns with confidence and clarity.
+      </p>
+      <p class="about-text">
+        With a blend of ancient wisdom and modern insight, our team of expert astrologers brings you authentic, personalized readings that reflect your true self. We believe that astrology is a tool for growth, transformation, and deeper connection with the world around you.
+      </p>
+      <p class="about-text">
+        Join us in exploring the stars, because your journey is written in the cosmos—and we’re here to help you read it.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-us-lower py-4">
+    <div class="container">
+      <div class="row g-0 text-center text-md-start">
+        <div class="col-md-2 col-6 footer-column">
+          <h5 class="footer-title">Links</h5>
+          <!-- Add links here -->
+        </div>
+        <div class="col-md-2 col-6 footer-column">
+          <h5 class="footer-title">Festivals</h5>
+          <!-- Add links here -->
+        </div>
+        <div class="col-md-2 col-6 footer-column">
+          <h5 class="footer-title">Remedies</h5>
+          <!-- Add links here -->
+        </div>
+        <div class="col-md-2 col-6 footer-column">
+          <h5 class="footer-title">FYQ</h5>
+          <!-- Add links here -->
+        </div>
+        <div class="col-md-4 col-12 footer-column">
+          <h5 class="footer-title">Contact Us</h5>
+          <!-- Add contact info here -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
