@@ -1,5 +1,29 @@
 import React from "react";
-import Navbar from "../components/Navbar"; // Assuming you've already created Navbar.jsx
+import Navbar from "../components/Navbar";
+import { auth, googleProvider, facebookProvider } from "../firebase";
+import { signInWithPopup } from "firebase/auth";
+
+const handleGoogleLogin = async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    console.log("Google Login Success:", user);
+    // Store user info, redirect to dashboard, etc.
+  } catch (error) {
+    console.error("Google Login Error:", error);
+  }
+};
+
+const handleFacebookLogin = async () => {
+  try {
+    const result = await signInWithPopup(auth, facebookProvider);
+    const user = result.user;
+    console.log("Facebook Login Success:", user);
+    // Store user info, redirect to dashboard, etc.
+  } catch (error) {
+    console.error("Facebook Login Error:", error);
+  }
+};
 
 export default function Login() {
   return (
@@ -42,7 +66,8 @@ export default function Login() {
                   <button
                     className="btn btn-lg btn-block w-100 text-white mb-3"
                     style={{ backgroundColor: "#dd4b39" }}
-                    type="submit"
+                    type="button"
+                    onClick={handleGoogleLogin}
                   >
                     <i className="fab fa-google me-2"></i> Sign in with Google
                   </button>
@@ -50,7 +75,8 @@ export default function Login() {
                   <button
                     className="btn btn-lg btn-block w-100 text-white"
                     style={{ backgroundColor: "#3b5998" }}
-                    type="submit"
+                    type="button"
+                    onClick={handleFacebookLogin}
                   >
                     <i className="fab fa-facebook-f me-2"></i> Sign in with Facebook
                   </button>
